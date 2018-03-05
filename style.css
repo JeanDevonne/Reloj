@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1em;
+}
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom, #8dc6d1 0%,#ab9cc7 33%,#d4b5d5 100%);
+    justify-content: center;
+}
+.imagen{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    color: white;
+    font-family: 'Karla', sans-serif;
+}
+.señal{
+    list-style: none;
+    height: 0px;
+    width: 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.señal li{
+    position: absolute;
+}
+.señal li:first-child{
+    animation: animacion 3s infinite cubic-bezier(.49,.45,.58,.96) 2s;
+    background: rgb(185, 221, 255);
+    opacity: .6;
+    border-radius: 50%;
+}
+.señal li:nth-child(2){
+    animation: animacion2 3s infinite cubic-bezier(.49,.45,.58,.96) 1.5s;
+    background:rgb(185, 221, 255);
+    opacity: .4;
+    border-radius: 50%;
+}
+.señal li:nth-child(3){
+    animation: animacion3 3s infinite cubic-bezier(.49,.45,.58,.96) 1s;
+    background: rgb(185, 221, 255);
+    opacity: .3;
+    border-radius: 50%;
+}
+
+@keyframes animacion{
+    0%{
+        width: 300px;
+        height: 300px;
+    }
+    80%{
+        opacity: 0.6;
+    }
+    100%{
+        width: 800px;
+        height: 800px;
+        opacity: 0;
+    }
+}
+
+@keyframes animacion2{
+    0%{
+        width: 300px;
+        height: 300px;
+    }
+    80%{
+        opacity: 0.5;
+    }
+    100%{
+        width: 800px;
+        height: 800px;
+        opacity: 0;
+    }
+}
+
+@keyframes animacion3{
+    0%{
+        width: 300px;
+        height: 300px;
+    }
+    80%{
+        opacity: 0.4;
+    }
+    100%{
+        width: 800px;
+        height: 800px;
+        opacity: 0;
+    }
+}
